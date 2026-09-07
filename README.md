@@ -18,3 +18,7 @@ Static HTML / CSS / JS. Google Fonts (**Syne** + **DM Sans**). Netlify Forms (`o
 ## Deploy
 
 Publish directory is `.` (this folder). Site name: `kerbstone-demo-orbitfall`. No custom domain. `X-Robots-Tag: noindex` via `netlify.toml`.
+
+## Playable game
+
+Browser DEMO shooter: https://kerbstone-orbitfall-game.netlify.app (source: `/workspace/demos/orbitfall-play/`). Linked from this landing via **Play Now**.
