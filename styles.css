@@ -122,8 +122,8 @@ code { font-size: .88em; background: var(--surface2); padding: .1em .35em; borde
   letter-spacing: .1em; text-transform: uppercase; color: var(--accent2); margin: 0 0 .75rem;
 }
 .hero h1 {
-  font-family: var(--display); font-weight: 800; font-size: clamp(3rem, 8vw, 5.2rem);
-  line-height: .95; letter-spacing: -0.03em; margin: 0 0 .65rem;
+  font-family: var(--display); font-weight: 800; font-size: clamp(2.2rem, 5.5vw, 3.8rem);
+  line-height: 1.05; letter-spacing: -0.03em; margin: 0 0 1rem; max-width: 16ch;
   background: linear-gradient(120deg, #fff 20%, #c4b5fd 55%, var(--accent2));
   -webkit-background-clip: text; background-clip: text; color: transparent;
 }
@@ -211,8 +211,26 @@ code { font-size: .88em; background: var(--surface2); padding: .1em .35em; borde
 .tc-scrub { flex: 1; height: 4px; background: var(--surface2); border-radius: 999px; overflow: hidden }
 .tc-fill { width: 12%; height: 100%; background: linear-gradient(90deg, var(--accent), var(--accent2)) }
 
+
+/* Wishlist bar + fictional quotes */
+.wishlist-bar {
+  border-block: 1px solid var(--line);
+  background: linear-gradient(90deg, var(--bg2), var(--surface), var(--bg2));
+  padding: 1rem 0;
+}
+.wishlist-bar-inner { display: flex; flex-wrap: wrap; gap: .75rem; justify-content: center }
+.quote-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem }
+.quote-card {
+  margin: 0; background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.25rem; display: flex; flex-direction: column; gap: 1rem;
+}
+.quote-card p { margin: 0; font-size: 1.05rem; font-weight: 600; font-family: var(--display); line-height: 1.35 }
+.quote-card footer { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem; margin-top: auto }
+.quote-card cite { font-style: normal; color: var(--muted); font-size: .88rem; font-weight: 600 }
+
 /* Features */
 .feature-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.15rem }
+.feature-grid-4 { grid-template-columns: repeat(4, 1fr) }
 .feature-card {
   background: var(--card); border: 1px solid var(--line); border-radius: var(--radius);
   padding: 1.35rem; transition: transform .25s var(--ease), border-color .25s, box-shadow .25s;
